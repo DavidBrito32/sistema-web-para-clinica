@@ -6,6 +6,7 @@ header {
   padding: 0 50px;
   background-color: #6a745f;
   transition-duration: 500ms;
+  border: 1px solid blue;
 }
 header .logo {
   width: 8vw;
@@ -81,10 +82,11 @@ header nav .ligth-mode.active {
 
 main {
   width: 100vw;
+  border: 1px solid blue;
 }
 main #login {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -409,7 +411,7 @@ main #cobertura #servicos a:hover {
   opacity: 1;
 }
 main .contact {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -476,9 +478,9 @@ main .overlay.active {
 }
 
 footer {
-  padding: 50px 0;
   color: #014a93;
   background-color: #709a16;
+  border: 1px solid blue;
 }
 footer h3 {
   margin-top: 0;
@@ -516,6 +518,7 @@ footer .item.social img {
     height: 11.5vh;
     padding: 0;
     align-items: center;
+    transition-duration: 1s;
   }
   header .logo {
     width: 5.5em;
@@ -554,7 +557,7 @@ footer .item.social img {
     position: absolute;
     z-index: 10000;
     top: 11.5vh;
-    right: -80%;
+    right: 0;
   }
   header nav .ligth-mode.active-mobile-menu {
     visibility: visible;
@@ -569,15 +572,15 @@ footer .item.social img {
     height: 40vh !important;
   }
   main #cobertura {
-    width: 100vw;
+    width: 99%;
     height: auto;
   }
   main #cobertura h1 {
     font-size: 1rem;
   }
   main #cobertura .ambulancia {
-    margin-top: 10px;
-    width: 100% !important;
+    margin: 0 auto;
+    width: 95%;
     height: 24%;
   }
   main #cobertura .ambulancia img {
@@ -585,24 +588,12 @@ footer .item.social img {
     width: 100% !important;
   }
   main #cobertura #servicos {
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: start;
-  }
-  main #cobertura #servicos h1 {
-    font-size: 1rem;
-  }
-  main #cobertura #servicos ul {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-  main #cobertura #servicos ul li {
-    width: 100% !important;
+    width: 99%;
+    border: 1px solid yellow;
+    margin: 0 auto;
   }
   main .contact {
-    width: 100vw;
+    width: 100%;
     height: auto;
     flex-direction: column;
     font-size: 1rem;
@@ -621,7 +612,7 @@ footer .item.social img {
     text-align: center;
   }
   main .contact .breefing {
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     position: relative;
     left: -3.1rem;
@@ -668,7 +659,7 @@ footer .item.social img {
     opacity: 1;
   }
   main #login .container {
-    width: 100vw;
+    width: 100%;
     background-color: #4b3d4c;
     border-radius: 24px;
     pointer-events: all;
@@ -878,9 +869,11 @@ footer .item.social img {
 }
 @media screen and (min-width: 480px) and (max-width: 900px) {
   header {
+    width: 100%;
     height: 11.5vh;
     padding: 0;
     align-items: center;
+    transition-duration: 1s;
   }
   header .logo {
     width: 5.5em;
@@ -918,13 +911,16 @@ footer .item.social img {
     position: absolute;
     z-index: 10000;
     top: 12vh;
-    right: -80%;
+    right: 0;
   }
   header nav .ligth-mode.active-mobile-menu {
     visibility: visible;
     opacity: 1;
     z-index: 10000;
     right: 50%;
+  }
+  main {
+    transition-duration: 1s;
   }
   main #principal {
     height: 70vh;
@@ -933,7 +929,7 @@ footer .item.social img {
     height: 70vh !important;
   }
   main #cobertura {
-    width: 100vw;
+    width: 100%;
     height: 110vh;
   }
   main #cobertura .ambulancia {
@@ -968,52 +964,46 @@ footer .item.social img {
     width: 100% !important;
   }
   main .contact {
-    width: 100vw;
+    width: 100%;
     height: auto;
     flex-direction: column;
     font-size: 1rem;
   }
-  main .contact a {
-    color: white;
-    font-size: 1.2rem;
-  }
-  main .contact h1 {
-    font-size: 1.45rem;
-  }
-  main .contact h3 {
-    font-size: 1.45rem;
-  }
   main .contact .breefing {
-    width: 100vw;
-    height: 110vh;
+    width: 100%;
     position: relative;
     display: grid;
-    grid-template: 1fr/1fr;
+    grid-template: 1fr/1fr 1fr 1fr;
     align-self: center;
     justify-self: center;
     text-align: center;
   }
-  main .contact .breefing a {
-    font-size: 1.5rem;
-    color: red;
+  main .contact .breefing h1, main .contact .breefing h3 {
+    font-size: 1.4rem;
   }
   main .contact .breefing p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  main .contact .breefing p a {
+    color: red;
   }
   main .contact .breefing img {
     display: block;
     margin: 0 auto;
     width: 50%;
     height: auto;
+    justify-items: center;
   }
   main .contact .form {
+    margin: 0 auto;
     background-color: transparent;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
-    width: 100% !important;
+    width: 100%;
     height: 55vh;
   }
   main .contact .form .form-control {
+    width: 100% !important;
     height: 50px !important;
   }
   main .contact .form .form-control .input {
@@ -1022,145 +1012,12 @@ footer .item.social img {
   main .contact .form h1 {
     font-size: 1rem;
   }
-  main #login {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5843137255);
-    top: 0;
-    left: 0;
-    z-index: 90000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition-duration: 500ms;
-    pointer-events: none;
-  }
-  main #login.active {
-    visibility: visible;
-    opacity: 1;
-  }
-  main #login .container {
-    width: 60vw;
-    border-radius: 24px;
-    pointer-events: all;
-    padding: 10px;
-  }
-  main #login .container form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: white;
-  }
-  main #login .container form h1 {
-    text-align: center;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  main #login .container form h1 span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(68, 37, 37);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  main #login .container form input {
-    padding-left: 20px;
-    width: 100%;
-    height: 3rem;
-    border-radius: 8px;
-    line-height: 3rem;
-    border: none;
-  }
-  main #login .container form input:focus {
-    outline: none;
-  }
-  main #login .container form .button {
-    margin: 0;
-    width: 100%;
-    height: 3rem;
-    border-radius: 8px;
-    background-color: #864f2d;
-    color: white;
-  }
-  main #login .container form .button:hover {
-    background-color: #9c5427;
-  }
-  main #login .container .senhaReset {
-    width: 70%;
-    height: 40px;
-    position: absolute;
-    bottom: 8.6em;
-    margin: 0 auto;
-    color: white;
-  }
-  main #login .container .senhaReset p {
-    font-size: 0.8rem;
-  }
-  main #login .container .senhaReset p a {
-    font-size: 0.8rem;
-    color: white;
-    text-decoration: none;
-  }
-  main #login .container .senhaReset p a:hover {
-    color: rgb(174, 173, 173);
-    text-decoration: underline;
-  }
-  main #login .container .logado {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    position: absolute;
-    bottom: 5.6em;
-    left: -30%;
-  }
-  main #login .container .logado .input {
-    height: 30px;
-    margin-bottom: 5px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  main #login .container .logado .input label {
-    font-size: 0.6rem;
-  }
-  main #login .container .logado .input input {
-    width: 15px;
-    height: 15px;
-  }
-  main #login .container .logado h5 {
-    font-size: 0.6rem;
-    right: 0;
-  }
-  main #login .container .logado h5 a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 0.6rem;
-  }
-  main #login .container .logado h5 a:hover {
-    color: rgb(213, 217, 4);
-    text-decoration: underline;
-  }
 }
 @media screen and (min-width: 901px) and (max-width: 1200px) {
   header {
+    width: 100%;
     padding: 0;
+    transition-duration: 1s;
   }
   header .logo {
     width: 7em;
@@ -1173,16 +1030,19 @@ footer .item.social img {
   }
   header nav .ligth-mode {
     position: absolute;
-    top: 25px;
+    top: 23px;
     right: 10px;
   }
   main {
-    width: 100vw !important;
+    width: 100% !important;
   }
 }
 @media screen and (min-width: 1200px) {
   header {
+    width: 100%;
     padding: 0;
+    transition-duration: 1s;
+    align-items: center;
   }
   header .logo {
     width: 6.5em;
@@ -1207,7 +1067,7 @@ footer .item.social img {
   list-style: none;
   font-size: 1rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 html {
@@ -1217,6 +1077,9 @@ html {
 body {
   background-color: #e3f2fd;
   transition-duration: 500ms;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 1s;
 }
 body.active-body {
   background-color: #4f4c53;
