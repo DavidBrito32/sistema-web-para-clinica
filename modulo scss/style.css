@@ -1,15 +1,15 @@
 header {
   width: 100vw;
   height: 12vh;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
+  align-items: center;
   padding: 0 50px;
   background-color: #6a745f;
   transition-duration: 500ms;
-  border: 1px solid blue;
 }
 header .logo {
-  width: 8vw;
+  width: 8vw !important;
   height: 90%;
 }
 header .logo img {
@@ -61,7 +61,7 @@ header nav .ligth-mode {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url("../../images/lua-dark-mode.png");
+  background: darkblue url("../../images/lua-dark-mode.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@ header nav .ligth-mode {
   z-index: 11000;
 }
 header nav .ligth-mode.active {
-  background: url("../../images/sun-light-mode.png");
+  background: goldenrod url("../../images/sun-light-mode.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1077,8 +1077,6 @@ html {
 body {
   background-color: #e3f2fd;
   transition-duration: 500ms;
-  display: flex;
-  flex-direction: column;
   transition-duration: 1s;
 }
 body.active-body {

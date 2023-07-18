@@ -1,15 +1,15 @@
 header{
     width: 100vw;
     height: 12vh;
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
+    align-items: center;
     padding: 0 50px;
     background-color: $header-light-mode;
     transition-duration: 500ms;
-    border: 1px solid blue;
 
         .logo{
-            width: 8vw;
+            width: 8vw !important;
             height: 90%;
                 img{
                     width: 100%;

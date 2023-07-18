@@ -24,8 +24,6 @@ html{
 body{
   background-color: $bg-body-light-mode;
   transition-duration: 500ms;
-  display: flex;
-  flex-direction: column;
   transition-duration: 1s;
 
     &.active-body{
