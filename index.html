@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <!--ESPAÇO PARA IMPORTS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--ESPAÇO PARA CSS-->
+    <link rel="stylesheet" href="modulo scss/style.css">
+    <title>UltraSaude sua clinica</title>
+</head>
+<body id="corpo">
+    
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="clinica">
+    </div>
+    <nav>
+      <div id="hamb" class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <ul id="menuBar" class="menu">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#servicos">Servicos</a></li>
+        <li><a href="#!">Clinicas</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li id="loginPage"><a href="#!">Login</a></li>
+      </ul>
+
+      <div id="modoDarkLigth" class="ligth-mode">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="login">
+      <div class="container">
+        <form>
+          <h1>Faca login para continuar <span title="fechar" id="fecharLogin">X</span></h1>
+            <label for="usuario">Usuario:</label>
+            <input type="text" required>
+            <label for="codAcesso">Codigo de acesso:</label>
+            <input type="number" name="codAcesso" id="codAcesso" required>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            <a class="botao" href="#!">Entrar no sistema</a>
+        </form>
+        <div class="senhaReset">
+          <p>Esqueceu a senha? <a href="#!">Redefinir Password</a></p>
+        </div>
+        <div class="logado">
+          <div class="input">
+            <input type="checkbox" name="manter" id="logado">
+            <label for="manter">Manter Conectado?</label>
+          </div>
+          <h5>Nao tem acesso ainda? <a id="cadastro" href="#!">registre-se</a></h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="principal">
+      <div id="carouselExampleCaptions" class="carousel slide overflow-hidden sm-100 mg-100 lg-100 xl-100 xxl-100">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slde1.jpg" class="d-block w-100 sm-100 mg-100 lg-100 xl-100 xxl-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Uma Clinica Preparada para atender o publico</h5>
+              <p>Aqui contamos com pessoal treinado para oferecer sempre o melhor atendimento possivel para voce nosso cliente.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide2.jpeg" class="d-block w-100 sm-100 mg-100 lg-100 xl-100 xxl-100" alt="...">
+            <div class="carousel-caption d-none d-md-block xs-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slid3.jpeg" class="d-block w-100 sm-100 mg-100 lg-100 xl-100 xxl-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="cobertura" class="d-flex flex-wrap align-items-center px-3">
+
+      <h1 class="text-center">Servicos cobertos pela clinica</h1>
+      <div class="ambulancia">
+        <img src="images/hambulancia.jpg" alt="">
+      </div>
+
+      <div id="servicos" class="servicos d-flex flex-wrap">
+        <ul class="d-flex flex-column">
+          <li>
+            <a href="#!">
+              <h3>Exames de rotina</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Tomografias</h3>
+            </a>          
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Raio X</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Ultrasonografia</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Ecocardiograma</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Ecografia</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Pronto Socorro 24h</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Medicina Online</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Inovacao medica</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Doencas raras</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Internacional patherns</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <h3>Internacional patherns</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <div class="breefing">
+        <h1>Deseja entrar em contato conosco?</h1>
+        <h3>Compromisso com sua saude</h3>
+        <p>Nosso E-mail: <a href="mailto: clinica@ultrasaude.com.br"><em><strong>clinica@ultrasaude.com.br</strong></em></a></p>
+        <p>Nossos medicos estao de prontidao aguardando seu contato!</p>
+        <img src="images/medicos undrow.svg" alt="">
+      </div>
+      <div class="form">
+        <h1>Nos envie uma mensagem, ficaremos felizes em atender voce!</h1>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+          <textarea name="mensagem" class="form-control" id="mensagem" cols="20" rows="5" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button>Enviar</button>
+      </div>
+    </section>
+
+    <section id="registreSe" class="registro">
+      <form>
+        <h3>Bem vindo Usuario <span title="fechar" onclick="fechaOverlay()">X</span></h3>
+        <h6>Faca seu cadastro para poder prosseguir para o sistema</h6>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" placeholder="Insira seu nome:">
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu E-mail:">
+          <label for="password1">Digite uma senha: </label>
+          <input type="password" name="password1" id="password1" placeholder="Digite sua senha: ">
+          <label for="password2">Digite Novamente: </label>
+          <input type="password" name="password2" id="password1" placeholder="Digite sua senha: ">
+          <button>Criar Conta</button>
+      </form>
+      <h3>Ja tem conta? <a id="abrirLogin" href="#!">Faca Login</a></h3>
+    </section>
+
+
+
+
+    <section onclick="fechaOverlay()" id="sobreposicao" class="overlay"></section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Hosting</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Legacy</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+                <h3>Careers</h3>
+                <ul>
+                    <li><a href="#">Job openings</a></li>
+                    <li><a href="#">Employee success</a></li>
+                    <li><a href="#">Benefits</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+              <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <p class="copyright">Ultra Saude © 2023</p>
+              <img src="images/logo.png" alt="clinica">
+            </div>
+          </div>
+    </div>
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script src="script/index.js"></script>  <!--JAVASCRIPT-->
+</body>
+</html>
