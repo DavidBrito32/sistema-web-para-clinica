@@ -67,7 +67,7 @@ header{
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
-                    background: url('../../images/lua-dark-mode.png');
+                    background: darkblue url('../../images/lua-dark-mode.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ header{
                     z-index: 11000;
 
                         &.active{
-                            background: url('../../images/sun-light-mode.png');
+                            background: goldenrod url('../../images/sun-light-mode.png');
                             background-position: center;
                             background-size: cover;
                             background-repeat: no-repeat;
