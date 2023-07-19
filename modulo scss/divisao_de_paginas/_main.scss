@@ -328,13 +328,15 @@ main{
 
     #cobertura{
         // background-color: $main-bg-cobertura;
-        height: 100vh;
+        // height: 100vh;
         border-bottom: 5px solid black;
         display: flex;
 
         h1{
             width: 100%;
+            line-height: 50px;
             height: 50px;
+            font-size: 1.8rem;
         }
 
         .ambulancia{
@@ -383,10 +385,8 @@ main{
 
     .contact{
         width: 100%;
-        height: 100vh;
         display: flex;
-        justify-content: space-between;
-        padding: 0 50px;
+
 
         h1{
             font-size: 2rem;
@@ -406,13 +406,13 @@ main{
                 height: 100%;   
                 
                     img{
-                        width: 100%;
-                        height: 60%;
+                        width: 50%;
+                        height: 40%;
                     }
             }
 
             .form{
-                width: 43% !important;
+                width: 43%;
                 height: 100%;
                 gap: 20px;
                 display: flex;
@@ -421,13 +421,13 @@ main{
                 text-align: center;
 
                 .form-control{
-                    width: 95% !important;
+                    width: 70% !important;
                 }
 
                 button{
                     border: none;
                     border-radius: 8px;
-                    width: 95%;
+                    width: 70%;
                     height: 3em;
                     line-height: 2em;
 
