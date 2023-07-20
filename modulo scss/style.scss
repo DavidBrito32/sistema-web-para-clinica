@@ -32,11 +32,25 @@ body{
         header{
           background-color: $header-dark-mode;
             a{
-              color: $header-dark-mode-color-a;
+              color: white;
                 &:hover{
                   color: #2c2c69;
                 }
             }
+
+            .bar{
+              background-color: white;
+            }
+
+            .menu{
+              &.active{
+                background-color: #012d13;
+              }
+            }
+        }
+
+        h3, h1, h4, h5, h6, p{
+          color: white;
         }
     }
 }
