@@ -95,7 +95,6 @@ header nav .ligth-mode.active img:nth-child(2) {
 
 main {
   width: 100vw;
-  border: 1px solid blue;
 }
 main #login {
   position: fixed;
@@ -491,7 +490,6 @@ main .overlay.active {
 footer {
   color: #014a93;
   background-color: #709a16;
-  border: 1px solid blue;
 }
 footer h3 {
   margin-top: 0;
@@ -520,7 +518,7 @@ footer .item.social {
   font-size: 1rem;
 }
 footer .item.social img {
-  width: 40%;
+  width: 30%;
 }
 
 /*--------------------------RESPONSIVIDADE GERAL----------------------------------*/
@@ -648,7 +646,6 @@ footer .item.social img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
   }
   main .contact .breefing a {
     font-size: 1.5rem;
@@ -1159,6 +1156,45 @@ footer .item.social img {
   main {
     width: 100% !important;
   }
+  footer {
+    text-align: center;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+  footer .col-lg-3 {
+    width: 100%;
+    height: 50vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .col-lg-3 .icons {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer .col-lg-3 .icons a {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .col-lg-3 .icons a i {
+    font-size: 2rem !important;
+    color: red;
+  }
+  footer .col-lg-3 .icons a i:hover {
+    transform: scale(1.3);
+  }
+  footer .col-lg-3 img {
+    width: 30em;
+    height: 40em;
+  }
 }
 @media screen and (min-width: 1200px) {
   header {
@@ -1180,6 +1216,44 @@ footer .item.social img {
     position: absolute;
     top: 10px;
     right: 40px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+  footer .col-lg-3 {
+    width: 100%;
+    height: 50vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .col-lg-3 .icons {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer .col-lg-3 .icons a {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .col-lg-3 .icons a i {
+    font-size: 4rem !important;
+  }
+  footer .col-lg-3 .icons a i:hover {
+    transform: scale(1.3);
+    color: rgb(82, 0, 100);
+  }
+  footer .col-lg-3 img {
+    height: 20em;
   }
 }
 * {
