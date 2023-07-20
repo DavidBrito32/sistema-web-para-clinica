@@ -31,4 +31,18 @@ pagina inicial da landpage...
 
 Por enquanto o sistema ja esta com essas etapas 90% concluido, aguardando novas correcoes futuras....
 
+![image](https://github.com/DavidBrito32/sistema-web-para-clinica/assets/125412383/15c0dc44-9de9-41ee-a421-904f2b70595a)
+
+#Versao Mobile.
+
+![image](https://github.com/DavidBrito32/sistema-web-para-clinica/assets/125412383/f0d91328-22df-49a7-b186-be405d8d19de)
+#Menu Hamburguer Funcional...
+
+
+Site com funcao DARK / LIGHT MODE funcional;
+
+
+
+
+
 
