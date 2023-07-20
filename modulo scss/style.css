@@ -58,26 +58,38 @@ header nav .menu a:hover {
   color: #0590b7;
 }
 header nav .ligth-mode {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: darkblue url("../../images/lua-dark-mode.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   transition-duration: 700ms;
   cursor: pointer;
   position: absolute;
-  top: 28px;
+  top: 10px;
   right: 50px;
   z-index: 11000;
 }
+header nav .ligth-mode img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 350ms ease-in-out;
+}
+header nav .ligth-mode img:nth-child(2) {
+  visibility: hidden;
+  opacity: 0;
+}
 header nav .ligth-mode.active {
-  background: goldenrod url("../../images/sun-light-mode.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 10000;
+  z-index: 11000;
+}
+header nav .ligth-mode.active img:nth-child(2) {
+  visibility: visible;
+  opacity: 1;
 }
 
 main {
@@ -553,11 +565,13 @@ footer .item.social img {
     z-index: 10000;
   }
   header nav .ligth-mode {
+    width: 40px;
+    height: 40px;
     visibility: hidden;
     opacity: 0;
     position: absolute;
     z-index: 10000;
-    top: 11.5vh;
+    top: 11.7vh;
     right: 0;
   }
   header nav .ligth-mode.active-mobile-menu {
